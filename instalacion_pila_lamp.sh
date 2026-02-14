@@ -41,6 +41,19 @@ phpinfo();
 ?>
 EOF
 
+# Información final de la instalación
+echo ""
+echo "*************************"
+echo "LAMP instalado correctamente"
+echo "*************************"
+echo "Versión de Apache: $(apache2 -v | head -n 1)"
+echo "Versión de MySQL: $(mysql --version)"
+echo " Versión de PHP: $(php -v | head -n 1)"
+echo ""
+
+echo ""
+echo "Hay que ejecutar 'sudo mysql_secure_installation'"
+
 
 
 
