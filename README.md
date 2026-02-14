@@ -11,5 +11,6 @@ php 8.1 con módulos básicos (mysql, curl, gd, mbstring, xml, zip)
 
 Si quieres clonarlo
 git clone https://github.com/JulioEguis/Install_pila_LAMP.git
+
 cd Install_pila_LAMP
 chmod +x Install_pila_LAMP
