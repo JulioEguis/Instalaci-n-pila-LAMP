@@ -19,4 +19,14 @@ apt install apache2 -y
 systemctl enable apache2
 systemctl start apache2
 
+# Instalar MySQL
+echo "Instalando MySQL..."
+apt install mysql-server -y
+systemctl enable mysql
+systemctl start mysql
+
+# Instalar PHP con la instalaciones basicas y con -y para que confirme todo
+echo "Instalando PHP y módulos..."
+apt install php libapache2-mod-php php-mysql php-cli php-curl php-gd php-mbstring php-xml php-zip -y
+
 
