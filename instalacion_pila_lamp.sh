@@ -29,4 +29,11 @@ systemctl start mysql
 echo "Instalando PHP y módulos..."
 apt install php libapache2-mod-php php-mysql php-cli php-curl php-gd php-mbstring php-xml php-zip -y
 
+# Configurar Apache y que cargue el modulo de php que instalamos
+echo "Configurando Apache..."
+a2enmod php
+systemctl restart apache2
+
+
+
 
