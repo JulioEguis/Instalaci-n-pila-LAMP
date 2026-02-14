@@ -34,6 +34,14 @@ echo "Configurando Apache..."
 a2enmod php
 systemctl restart apache2
 
+# Crear archivo de prueba
+cat > /var/www/html/info.php << 'EOF'
+<?php
+phpinfo();
+?>
+EOF
+
+
 
 
 
