@@ -33,9 +33,9 @@ http://localhost - debería ver la página por defecto de apache
 http://localhost/info.php - debería ver la info de php que hemos intalado
 
 Ver las versiones instaladas
-apache2 -v
-mysql --version
-php -v
+-> apache2 -v
+-> mysql --version
+-> php -v
 
 Asegurar mysql, esto te permite poner contraseña al root de mysql y eliminar usuarios de prueba.
 sudo mysql_secure_installation
